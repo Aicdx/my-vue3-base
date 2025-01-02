@@ -11,8 +11,13 @@
     "title": "Dashboard",
     "workspace": "Workspace"
   },
-  "employeeManagement": {
+  "employeeInfoExt": {
     "employee": "Employee",
-    "title": "Employee Management"
+    "title": "Employee Info Ext"
+  },
+  "outsourcing": {
+    "title": "Outsourcing",
+    "information": "Outsourcing Information",
+    "account": "Outsourcing Account"
   }
 }

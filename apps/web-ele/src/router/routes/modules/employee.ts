@@ -8,20 +8,19 @@ const routes: RouteRecordRaw[] = [
     component: BasicLayout,
     meta: {
       icon: 'mdi:account-group',
-      title: $t('page.employeeManagement.title'),
+      title: $t('page.employeeInfoExt.title'),
     },
-    name: 'EmployeeManagement',
-    path: '/employeeManagement',
-    redirect: '/employeeManagement/employee',
+    name: 'EmployeeInfoExt',
+    path: '/employeeInfoExt',
+    redirect: '/employeeInfoExt/employee',
     children: [
       {
         name: 'Employee',
-        path: '/employeeManagement/employee',
-        component: () =>
-          import('#/views/employeeManagement/employee/index.vue'),
+        path: '/employeeInfoExt/employee',
+        component: () => import('#/views/employeeInfoExt/employee/index.vue'),
         meta: {
           icon: 'mdi:account-group',
-          title: $t('page.employeeManagement.employee'),
+          title: $t('page.employeeInfoExt.employee'),
         },
       },
     ],

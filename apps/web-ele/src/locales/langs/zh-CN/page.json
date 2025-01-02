@@ -6,13 +6,18 @@
     "qrcodeLogin": "二维码登录",
     "forgetPassword": "忘记密码"
   },
-  "employeeManagement": {
-    "title": "员工管理",
+  "employeeInfoExt": {
+    "title": "员工信息",
     "employee": "员工列表"
   },
   "dashboard": {
     "title": "概览",
     "analytics": "分析页",
     "workspace": "工作台"
+  },
+  "outsourcing": {
+    "title": "外包管理",
+    "information": "外包信息",
+    "account": "外包账户"
   }
 }
