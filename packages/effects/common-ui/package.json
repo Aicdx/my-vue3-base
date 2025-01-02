@@ -32,6 +32,7 @@
     "@vben/types": "workspace:*",
     "@vueuse/core": "catalog:",
     "@vueuse/integrations": "catalog:",
+    "element-plus": "catalog:",
     "qrcode": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:"

@@ -1,14 +1,18 @@
 {
   "auth": {
-    "login": "Login",
-    "register": "Register",
     "codeLogin": "Code Login",
+    "forgetPassword": "Forget Password",
+    "login": "Login",
     "qrcodeLogin": "Qr Code Login",
-    "forgetPassword": "Forget Password"
+    "register": "Register"
   },
   "dashboard": {
-    "title": "Dashboard",
     "analytics": "Analytics",
+    "title": "Dashboard",
     "workspace": "Workspace"
+  },
+  "employeeManagement": {
+    "employee": "Employee",
+    "title": "Employee Management"
   }
 }
