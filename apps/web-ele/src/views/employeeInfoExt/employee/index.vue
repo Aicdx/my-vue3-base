@@ -1,119 +1,141 @@
 <script lang="ts" setup>
-import type { TableData } from '../types';
+import type { VxeGridProps } from '#/adapter/vxe-table';
 
-import { ref } from 'vue';
+import { ElButton, ElMessage } from 'element-plus';
 
-import { SearchTable } from '@vben/common-ui';
+import { useVbenVxeGrid } from '#/adapter/vxe-table';
 
-import { ElButton, ElTableColumn } from 'element-plus';
+import { MOCK_API_DATA } from '../table-data';
 
-import EditDialog from './components/EditDialog.vue';
+interface RowType {
+  category: string;
+  color: string;
+  id: string;
+  price: string;
+  productName: string;
+  releaseDate: string;
+}
 
-// 姓名、性别、出生日期、联系方式、身份证号码、学历、专业、工作经验
+// 数据实例
+// const MOCK_TREE_TABLE_DATA = [
+//   {
+//     date: '2020-08-01',
+//     id: 10_000,
+//     name: 'Test1',
+//     parentId: null,
+//     size: 1024,
+//     type: 'mp3',
+//   },
+// ]
 
-const columns = [
-  { label: '姓名', prop: 'name', width: 180 },
-  { label: '性别', prop: 'gender', width: 180 },
-  { label: '出生日期', prop: 'birthDate', width: 180 },
-  { label: '联系方式', prop: 'phone', width: 180 },
-  { label: '身份证号码', prop: 'idCard', width: 180 },
-  { label: '学历', prop: 'education', width: 180 },
-  { label: '专业', prop: 'profession', width: 180 },
-  { label: '工作经验', prop: 'workExperience', width: 180 },
-];
-// 部门、岗位、工作地点、服务提供商
-const searchItems = [
-  {
-    label: '部门',
-    prop: 'department',
-    type: 'input',
-    placeholder: '请输入部门',
-  },
-  { label: '岗位', prop: 'position', type: 'input', placeholder: '请输入岗位' },
-  {
-    label: '工作地点',
-    prop: 'workLocation',
-    type: 'input',
-    placeholder: '请输入工作地点',
-  },
-  {
-    label: '服务提供商',
-    prop: 'serviceProvider',
-    type: 'input',
-    placeholder: '请输入服务提供商',
-  },
-];
+const sleep = (time = 1000) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(true);
+    }, time);
+  });
+};
 
-const fetchData = async () => {
-  const educationList = ['高中', '专科', '本科', '硕士', '博士'];
-  const professionList = [
-    '计算机科学',
-    '软件工程',
-    '信息技术',
-    '通信工程',
-    '电子工程',
-  ];
-
-  const mockData = Array.from({ length: 13 }).map((_, index) => ({
-    id: index + 1,
-    name: `张三${index + 1}`,
-    gender: index % 2 === 0 ? '男' : '女',
-    birthDate: '1990-01-01',
-    phone: `1380000${String(index + 1).padStart(4, '0')}`,
-    idCard: `3301${String(index + 1).padStart(14, '0')}`,
-    education: educationList[index % educationList.length] || educationList[0],
-    profession:
-      professionList[index % professionList.length] || professionList[0],
-    workExperience: `${index + 1}年`,
-  }));
-
-  return {
-    list: mockData,
-    total: 100,
+/**
+ * 获取示例表格数据
+ */
+interface DemoTableApi {
+  PageFetchParams: {
+    page: number;
+    pageSize: number;
   };
+}
+
+async function getExampleTableApi(params: DemoTableApi['PageFetchParams']) {
+  return new Promise<{ items: any; total: number }>((resolve) => {
+    const { page, pageSize } = params;
+    const items = MOCK_API_DATA.slice((page - 1) * pageSize, page * pageSize);
+
+    sleep(1000).then(() => {
+      resolve({
+        total: items.length,
+        items,
+      });
+    });
+  });
+}
+
+const gridOptions: VxeGridProps<RowType> = {
+  checkboxConfig: {
+    highlight: true,
+    labelField: 'name',
+  },
+  columns: [
+    { title: '序号', type: 'seq', width: 50 },
+    { align: 'left', title: 'Name', type: 'checkbox', width: 100 },
+    { field: 'category', title: 'Category' },
+    { field: 'color', title: 'Color' },
+    { field: 'productName', title: 'Product Name' },
+    { field: 'price', title: 'Price' },
+    { field: 'releaseDate', formatter: 'formatDateTime', title: 'DateTime' },
+  ],
+  exportConfig: {},
+  // height: 'auto', // 如果设置为 auto，则必须确保存在父节点且不允许存在相邻元素，否则会出现高度闪动问题
+  keepSource: true,
+  proxyConfig: {
+    ajax: {
+      query: async ({ page }) => {
+        return await getExampleTableApi({
+          page: page.currentPage,
+          pageSize: page.pageSize,
+        });
+      },
+    },
+  },
+  toolbarConfig: {
+    custom: true,
+    export: true,
+    // import: true,
+    refresh: true,
+    zoom: true,
+  },
 };
 
-const dialogVisible = ref(false);
-const currentRow = ref({});
+const [Grid, gridApi] = useVbenVxeGrid({
+  gridOptions,
+});
 
-const handleEdit = (row: TableData) => {
-  currentRow.value = row;
-  dialogVisible.value = true;
-};
-
-const handleSave = () => {
-  // 这里添加保存逻辑
+const showMessage = (message: string) => {
+  ElMessage({
+    message,
+    type: 'info',
+  });
 };
 </script>
 
 <template>
-  <SearchTable
-    :columns="columns"
-    :fetch-data="fetchData"
-    :search-items="searchItems"
-  >
-    <template #operate>
-      <ElButton type="primary">搜索</ElButton>
-      <ElButton>重置</ElButton>
-      <ElButton>导入</ElButton>
-    </template>
-    <template #columns>
-      <ElTableColumn fixed="right" label="操作" width="150">
-        <template #default="scope">
-          <ElButton link type="primary" @click="handleEdit(scope.row)">
-            编辑
-          </ElButton>
-          <ElButton link type="danger" @click="console.log(scope.row)">
-            删除
-          </ElButton>
-        </template>
-      </ElTableColumn>
-    </template>
-  </SearchTable>
-
-  <EditDialog
-    v-model:visible="dialogVisible"
-    :row-data="currentRow"
-    @save="handleSave"
-  />
+  <div class="vp-raw w-full">
+    <Grid>
+      <template #toolbar-tools>
+        <ElButton
+          class="mr-2"
+          type="primary"
+          @click="
+            () => {
+              gridApi.query();
+              showMessage('刷新当前页面成功');
+            }
+          "
+        >
+          刷新当前页面
+        </ElButton>
+        <ElButton
+          type="primary"
+          @click="
+            () => {
+              gridApi.reload();
+              showMessage('刷新并返回第一页成功');
+            }
+          "
+        >
+          刷新并返回第一页
+        </ElButton>
+      </template>
+    </Grid>
+  </div>
 </template>
