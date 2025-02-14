@@ -19,5 +19,9 @@
     "title": "外包管理",
     "information": "外包信息",
     "account": "外包账户"
+  },
+  "system": {
+    "title": "系统管理",
+    "user": "用户管理"
   }
 }
