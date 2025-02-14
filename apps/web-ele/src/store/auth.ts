@@ -5,6 +5,7 @@ import { useRouter } from 'vue-router';
 
 import { DEFAULT_HOME_PATH, LOGIN_PATH } from '@vben/constants';
 import { resetAllStores, useAccessStore, useUserStore } from '@vben/stores';
+import { encrypt } from '@vben/utils';
 
 import { ElNotification } from 'element-plus';
 import { defineStore } from 'pinia';
@@ -32,7 +33,15 @@ export const useAuthStore = defineStore('auth', () => {
     let userInfo: null | UserInfo = null;
     try {
       loginLoading.value = true;
-      const { accessToken } = await loginApi(params);
+      // 加密密码
+      const encryptedPassword = encrypt(params.password);
+      // 创建新的登录参数对象,避免直接修改原对象
+      const loginParams: Recordable<any> = {
+        ...params,
+        password: encryptedPassword,
+      };
+      // 调用登录接口获取token
+      const { accessToken } = await loginApi(loginParams);
 
       // 如果成功获取到 accessToken
       if (accessToken) {
