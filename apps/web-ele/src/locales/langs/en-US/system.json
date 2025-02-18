@@ -19,5 +19,11 @@
     "usernamePlaceholder": "Please enter username",
     "role": "Role",
     "rolePlaceholder": "Please enter role"
+  },
+  "role": {
+    "name": "Role Name",
+    "code": "Role Code",
+    "description": "Description",
+    "status": "Status"
   }
 }

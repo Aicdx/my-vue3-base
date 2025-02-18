@@ -15,25 +15,22 @@ import {
 } from 'element-plus';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
-import { deleteUserApi, getUserListApi } from '#/api/system/user';
+import { deleteRoleApi, getRoleListApi } from '#/api/system/role';
 
-import UserFromModal from './userFromModal.vue';
+import RoleFromModal from './roleFromModal.vue';
 
 interface RowType {
   id: string;
-  username: string;
-  nickName: string;
-  gender: string;
-  email: string;
-  phone: string;
-  department: string;
+  name: string;
+  code: string;
+  description: string;
   enabled: boolean;
-  releaseDate: string;
+  createTime: string;
 }
 
 async function getExampleTableApi(params: TableApi['PageFetchParams']) {
   return new Promise<{ items: any; total: number }>((resolve) => {
-    getUserListApi(params).then((res) => {
+    getRoleListApi(params).then((res: { content: any; totalElements: any }) => {
       resolve({
         items: res.content,
         total: res.totalElements,
@@ -41,57 +38,46 @@ async function getExampleTableApi(params: TableApi['PageFetchParams']) {
     });
   });
 }
+
 const formOptions: VbenFormProps = {
-  // 默认展开
   schema: [
     {
       component: 'Input',
       componentProps: {
-        placeholder: '请输入名称或者邮箱',
+        placeholder: '请输入角色名称或编码',
       },
       wrapperClass: 'w-1/3',
       defaultValue: '',
       fieldName: 'blurry',
-      label: '名称/邮箱',
+      label: '角色名称/编码',
     },
   ],
   submitButtonOptions: {
     content: '查询',
   },
-  // 是否在字段值改变时提交表单
   submitOnChange: false,
-  // 按下回车时是否提交表单
   submitOnEnter: true,
 };
+
 const gridOptions: VxeGridProps<RowType> = {
   checkboxConfig: {
     highlight: true,
     labelField: 'name',
   },
-  // 需要数据库导出可以配置
-  // exportConfig: {
-  //   type: 'csv',
-  //   remote: true,
-  //   exportMethod: async ({ $table, $grid, options }) => {
-  //   },
-  // },
   columns: [
     { type: 'checkbox', width: 100 },
-    { align: 'left', field: 'username', title: $t('system.user.username') },
-    { field: 'nickName', title: $t('system.user.nickname') },
-    { field: 'gender', title: $t('system.user.gender') },
-    { field: 'email', title: $t('system.user.email') },
-    { field: 'phone', title: $t('system.user.phone') },
-    { field: 'dept.name', title: $t('system.user.department') },
+    { align: 'left', field: 'name', title: $t('system.role.name') },
+    { field: 'code', title: $t('system.role.code') },
+    { field: 'description', title: $t('system.role.description') },
     {
       field: 'enabled',
       slots: { default: 'enabled' },
-      title: $t('system.user.status'),
+      title: $t('system.role.status'),
     },
     {
-      field: 'releaseDate',
+      field: 'createTime',
       formatter: 'formatDate',
-      title: $t('system.user.createTime'),
+      title: $t('system.role.createTime'),
     },
     {
       field: 'action',
@@ -124,8 +110,7 @@ const [Grid, gridApi] = useVbenVxeGrid({
   formOptions,
 });
 const [Modal, modalApi] = useVbenModal({
-  // 连接抽离的组件
-  connectedComponent: UserFromModal,
+  connectedComponent: RoleFromModal,
 });
 
 const handleSuccess = () => {
@@ -150,7 +135,7 @@ const handleDelete = (row: RowType) => {
     cancelButtonText: $t('common.cancel'),
     type: 'warning',
   }).then(() => {
-    deleteUserApi([row.id]).then(() => {
+    deleteRoleApi([row.id]).then(() => {
       ElMessage.success($t('common.success'));
       gridApi.reload();
     });

@@ -24,6 +24,15 @@ const routes: RouteRecordRaw[] = [
           title: $t('page.system.user'),
         },
       },
+      {
+        name: 'Role',
+        component: () => import('#/views/system/role/index.vue'),
+        path: '/system/role',
+        meta: {
+          icon: 'mdi:shield-account',
+          title: $t('page.system.role'),
+        },
+      },
     ],
   },
 ];

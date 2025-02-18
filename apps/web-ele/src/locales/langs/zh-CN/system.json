@@ -19,5 +19,11 @@
     "usernamePlaceholder": "请输入用户名",
     "role": "角色",
     "rolePlaceholder": "请输入角色"
+  },
+  "role": {
+    "name": "角色名称",
+    "code": "角色编码",
+    "description": "角色描述",
+    "status": "状态"
   }
 }

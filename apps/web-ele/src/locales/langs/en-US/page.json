@@ -22,6 +22,7 @@
   },
   "system": {
     "title": "System",
-    "user": "User"
+    "user": "User",
+    "role": "Role"
   }
 }
