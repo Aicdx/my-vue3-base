@@ -1,4 +1,5 @@
 {
+  "action": "Action",
   "back": "Back",
   "backToHome": "Back To Home",
   "login": "Login",
@@ -6,10 +7,15 @@
   "prompt": "Prompt",
   "cancel": "Cancel",
   "confirm": "Confirm",
+  "deleteConfirm": "Are you sure to delete?",
   "noData": "No Data",
   "refresh": "Refresh",
   "loadingMenu": "Loading Menu",
   "query": "Search",
   "search": "Search",
-  "reset": "Reset"
+  "reset": "Reset",
+  "add": "Add",
+  "edit": "Edit",
+  "delete": "Delete",
+  "success": "Success"
 }

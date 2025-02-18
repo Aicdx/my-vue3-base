@@ -1,0 +1,23 @@
+{
+  "user": {
+    "createTime": "Create Time",
+    "department": "Department",
+    "departmentPlaceholder": "Please enter department",
+    "email": "Email",
+    "emailPlaceholder": "Please enter email",
+    "female": "Female",
+    "gender": "Gender",
+    "male": "Male",
+    "nickname": "Nickname",
+    "nicknamePlaceholder": "Please enter nickname",
+    "phone": "Phone",
+    "phonePlaceholder": "Please enter phone number",
+    "position": "Position",
+    "positionPlaceholder": "Please enter position",
+    "status": "Status",
+    "username": "Username",
+    "usernamePlaceholder": "Please enter username",
+    "role": "Role",
+    "rolePlaceholder": "Please enter role"
+  }
+}
