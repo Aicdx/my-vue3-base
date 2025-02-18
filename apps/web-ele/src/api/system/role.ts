@@ -31,7 +31,7 @@ export async function addRoleApi(data: Omit<RoleModel, 'id'>) {
  * 更新角色
  */
 export async function updateRoleApi(data: RoleModel) {
-  return requestClient.put(`/api/roles/${data.id}`, data);
+  return requestClient.put(`/api/roles`, data);
 }
 
 /**

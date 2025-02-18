@@ -22,8 +22,10 @@
   },
   "role": {
     "name": "角色名称",
-    "code": "角色编码",
+    "level": "角色等级",
     "description": "角色描述",
-    "status": "状态"
+    "dataScope": "数据范围",
+    "createTime": "创建时间",
+    "depts": " 数据权限"
   }
 }

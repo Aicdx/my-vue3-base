@@ -24,6 +24,9 @@
     "name": "Role Name",
     "code": "Role Code",
     "description": "Description",
-    "status": "Status"
+    "createTime": "Create Time",
+    "level": "Level",
+    "dataScope": "Data Scope",
+    "depts": "Depts"
   }
 }

@@ -65,15 +65,14 @@ const gridOptions: VxeGridProps<RowType> = {
     labelField: 'name',
   },
   columns: [
-    { type: 'checkbox', width: 100 },
-    { align: 'left', field: 'name', title: $t('system.role.name') },
-    { field: 'code', title: $t('system.role.code') },
-    { field: 'description', title: $t('system.role.description') },
     {
-      field: 'enabled',
-      slots: { default: 'enabled' },
-      title: $t('system.role.status'),
+      align: 'left',
+      type: 'checkbox',
+      field: 'name',
+      title: $t('system.role.name'),
     },
+    { field: 'dataScope', title: $t('system.role.dataScope') },
+    { field: 'description', title: $t('system.role.description') },
     {
       field: 'createTime',
       formatter: 'formatDate',
