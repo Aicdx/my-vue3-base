@@ -24,6 +24,7 @@
     "title": "System",
     "user": "User",
     "role": "Role",
-    "menu": "Menu"
+    "menu": "Menu",
+    "post": "Post"
   }
 }

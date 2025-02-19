@@ -42,5 +42,12 @@
     "type": "Menu Type",
     "icon": "Menu Icon",
     "path": "Path"
+  },
+  "post": {
+    "title": "Post Title",
+    "sort": "Sort",
+    "enabled": "Enabled",
+    "updateBy": "Update By",
+    "createTime": "Create Time"
   }
 }

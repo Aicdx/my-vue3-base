@@ -41,5 +41,12 @@
     "action": "操作",
     "icon": "菜单图标",
     "path": "路由地址"
+  },
+  "post": {
+    "title": "岗位标题",
+    "sort": "排序",
+    "enabled": "状态",
+    "updateBy": "更新者",
+    "createTime": "创建时间"
   }
 }

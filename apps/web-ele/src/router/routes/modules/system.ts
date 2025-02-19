@@ -43,6 +43,15 @@ const routes: RouteRecordRaw[] = [
         },
       },
       {
+        name: 'Post',
+        component: () => import('#/views/system/post/index.vue'),
+        path: '/system/post',
+        meta: {
+          icon: 'mdi:post',
+          title: $t('page.system.post'),
+        },
+      },
+      {
         name: 'SelfTarget',
         path: '/outside/iframe/self-target',
         component: IFrameView,
