@@ -23,6 +23,7 @@
   "system": {
     "title": "System",
     "user": "User",
-    "role": "Role"
+    "role": "Role",
+    "menu": "Menu"
   }
 }

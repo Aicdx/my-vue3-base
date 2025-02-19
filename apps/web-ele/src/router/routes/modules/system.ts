@@ -1,6 +1,6 @@
 import type { RouteRecordRaw } from 'vue-router';
 
-import { BasicLayout } from '#/layouts';
+import { BasicLayout, IFrameView } from '#/layouts';
 import { $t } from '#/locales';
 
 const routes: RouteRecordRaw[] = [
@@ -31,6 +31,27 @@ const routes: RouteRecordRaw[] = [
         meta: {
           icon: 'mdi:shield-account',
           title: $t('page.system.role'),
+        },
+      },
+      {
+        name: 'Menu',
+        component: () => import('#/views/system/menu/index.vue'),
+        path: '/system/menu',
+        meta: {
+          icon: 'mdi:menu',
+          title: $t('page.system.menu'),
+        },
+      },
+      {
+        name: 'SelfTarget',
+        path: '/outside/iframe/self-target',
+        component: IFrameView,
+        meta: {
+          icon: 'devicon:tailwindcss',
+          iframeSrc:
+            'http://it-qa.seasungame.com:34444/management/#/Performance/SelfTarget',
+          // keepAlive: true,
+          title: 'SelfTarget',
         },
       },
     ],

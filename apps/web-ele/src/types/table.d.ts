@@ -1,7 +1,10 @@
 interface TableApi {
   PageFetchParams: {
-    page: number;
-    pageSize: number;
+    current?: number;
+    page?: number;
+    pageSize?: number;
+    pid?: number;
+    size?: number;
   };
   PageFetchResult: {
     content: any[];

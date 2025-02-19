@@ -27,5 +27,19 @@
     "dataScope": "数据范围",
     "createTime": "创建时间",
     "depts": " 数据权限"
+  },
+  "menu": {
+    "title": "菜单标题",
+    "type": "菜单类型",
+    "sort": "排序",
+    "permission": "权限标识",
+    "component": "组件路径",
+    "link": "外链",
+    "cache": "缓存",
+    "visible": "可见",
+    "createTime": "创建时间",
+    "action": "操作",
+    "icon": "菜单图标",
+    "path": "路由地址"
   }
 }

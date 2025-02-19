@@ -6,18 +6,12 @@ import type { TableApi } from '#/types/table';
 import { useVbenModal } from '@vben/common-ui';
 import { $t } from '@vben/locales';
 
-import {
-  ElButton,
-  ElIcon,
-  ElMessage,
-  ElMessageBox,
-  ElSwitch,
-} from 'element-plus';
+import { ElButton, ElIcon, ElMessage, ElMessageBox } from 'element-plus';
 
 import { useVbenVxeGrid } from '#/adapter/vxe-table';
-import { deleteRoleApi, getRoleListApi } from '#/api/system/role';
+import { deleteMenuApi, getMenuListApi } from '#/api/system/menu';
 
-import RoleFromModal from './roleFromModal.vue';
+import RoleFromModal from './menuFromModal.vue';
 
 interface RowType {
   id: string;
@@ -30,12 +24,22 @@ interface RowType {
 
 async function getExampleTableApi(params: TableApi['PageFetchParams']) {
   return new Promise<{ items: any; total: number }>((resolve) => {
-    getRoleListApi(params).then((res: { content: any; totalElements: any }) => {
+    getMenuListApi(params).then((res: { content: any; totalElements: any }) => {
       resolve({
         items: res.content,
         total: res.totalElements,
       });
     });
+  });
+}
+
+async function fetchChildListApi(row: any) {
+  return getMenuListApi({
+    current: 1,
+    size: 1000,
+    pid: row.id,
+  }).then((res) => {
+    return res.content;
   });
 }
 
@@ -62,22 +66,50 @@ const formOptions: VbenFormProps = {
 const gridOptions: VxeGridProps<RowType> = {
   checkboxConfig: {
     highlight: true,
-    labelField: 'name',
+    labelField: '',
   },
   exportConfig: {},
+  pagerConfig: {
+    enabled: false,
+  },
+  treeConfig: {
+    transform: true,
+    rowField: 'id',
+    parentField: 'parentId',
+    lazy: true,
+    hasChild: 'hasChildren',
+    loadMethod({ row }) {
+      return fetchChildListApi(row);
+    },
+  },
+  height: 820,
+  scrollY: {
+    enabled: true,
+    gt: 0,
+  },
   columns: [
     {
       align: 'left',
+      field: '',
       type: 'checkbox',
-      field: 'name',
-      title: $t('system.role.name'),
+      width: 50,
     },
-    { field: 'dataScope', title: $t('system.role.dataScope') },
-    { field: 'description', title: $t('system.role.description') },
+    {
+      align: 'left',
+      field: 'title',
+      title: $t('system.menu.title'),
+      treeNode: true,
+    },
+    { field: 'menuSort', title: $t('system.menu.sort') },
+    { field: 'permission', title: $t('system.menu.permission') },
+    { field: 'component', title: $t('system.menu.component') },
+    { field: 'IFrame', title: $t('system.menu.link') },
+    { field: 'cache', title: $t('system.menu.cache') },
+    { field: 'hidden', title: $t('system.menu.visible') },
     {
       field: 'createTime',
       formatter: 'formatDate',
-      title: $t('system.role.createTime'),
+      title: $t('system.menu.createTime'),
     },
     {
       field: 'action',
@@ -88,11 +120,10 @@ const gridOptions: VxeGridProps<RowType> = {
   keepSource: true,
   proxyConfig: {
     ajax: {
-      query: async ({ page }, formValues) => {
+      query: async ({ page }) => {
         return await getExampleTableApi({
-          page: page.currentPage,
-          pageSize: page.pageSize,
-          ...formValues,
+          current: page.currentPage,
+          size: page.pageSize,
         });
       },
     },
@@ -135,7 +166,7 @@ const handleDelete = (row: RowType) => {
     cancelButtonText: $t('common.cancel'),
     type: 'warning',
   }).then(() => {
-    deleteRoleApi([row.id]).then(() => {
+    deleteMenuApi([row.id]).then(() => {
       ElMessage.success($t('common.success'));
       gridApi.reload();
     });
@@ -151,12 +182,9 @@ const handleDelete = (row: RowType) => {
           {{ $t('common.add') }}
         </ElButton>
       </template>
-      <template #enabled="{ row }">
-        <ElSwitch v-model="row.enabled" />
-      </template>
       <template #action="{ row }">
         <ElButton link type="primary" @click="handleEdit(row)">
-          <ElIcon :size="16" class="icon-[mdi--edit]" />
+          <ElIcon :size="16" class="icon-[mdi--pencil]" />
         </ElButton>
         <ElButton link type="danger" @click="handleDelete(row)">
           <ElIcon :size="16" class="icon-[mdi--delete]" />

@@ -28,5 +28,19 @@
     "level": "Level",
     "dataScope": "Data Scope",
     "depts": "Depts"
+  },
+  "menu": {
+    "title": "Menu Title",
+    "sort": "Sort",
+    "permission": "Permission",
+    "component": "Component",
+    "link": "Link",
+    "cache": "Cache",
+    "visible": "Visible",
+    "createTime": "Create Time",
+    "action": "Action",
+    "type": "Menu Type",
+    "icon": "Menu Icon",
+    "path": "Path"
   }
 }
