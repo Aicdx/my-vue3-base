@@ -1,155 +1,155 @@
 {
   "folders": [
     {
-      "name": "@vben/backend-mock",
+      "name": "@seasun/backend-mock",
       "path": "apps/backend-mock",
     },
     {
-      "name": "@vben/web-ele",
+      "name": "@seasun/web-ele",
       "path": "apps/web-ele",
     },
     {
-      "name": "@vben/commitlint-config",
+      "name": "@seasun/commitlint-config",
       "path": "internal/lint-configs/commitlint-config",
     },
     {
-      "name": "@vben/eslint-config",
+      "name": "@seasun/eslint-config",
       "path": "internal/lint-configs/eslint-config",
     },
     {
-      "name": "@vben/prettier-config",
+      "name": "@seasun/prettier-config",
       "path": "internal/lint-configs/prettier-config",
     },
     {
-      "name": "@vben/stylelint-config",
+      "name": "@seasun/stylelint-config",
       "path": "internal/lint-configs/stylelint-config",
     },
     {
-      "name": "@vben/node-utils",
+      "name": "@seasun/node-utils",
       "path": "internal/node-utils",
     },
     {
-      "name": "@vben/tailwind-config",
+      "name": "@seasun/tailwind-config",
       "path": "internal/tailwind-config",
     },
     {
-      "name": "@vben/tsconfig",
+      "name": "@seasun/tsconfig",
       "path": "internal/tsconfig",
     },
     {
-      "name": "@vben/vite-config",
+      "name": "@seasun/vite-config",
       "path": "internal/vite-config",
     },
     {
-      "name": "@vben-core/design",
+      "name": "@seasun-core/design",
       "path": "packages/@core/base/design",
     },
     {
-      "name": "@vben-core/icons",
+      "name": "@seasun-core/icons",
       "path": "packages/@core/base/icons",
     },
     {
-      "name": "@vben-core/shared",
+      "name": "@seasun-core/shared",
       "path": "packages/@core/base/shared",
     },
     {
-      "name": "@vben-core/typings",
+      "name": "@seasun-core/typings",
       "path": "packages/@core/base/typings",
     },
     {
-      "name": "@vben-core/composables",
+      "name": "@seasun-core/composables",
       "path": "packages/@core/composables",
     },
     {
-      "name": "@vben-core/preferences",
+      "name": "@seasun-core/preferences",
       "path": "packages/@core/preferences",
     },
     {
-      "name": "@vben-core/form-ui",
+      "name": "@seasun-core/form-ui",
       "path": "packages/@core/ui-kit/form-ui",
     },
     {
-      "name": "@vben-core/layout-ui",
+      "name": "@seasun-core/layout-ui",
       "path": "packages/@core/ui-kit/layout-ui",
     },
     {
-      "name": "@vben-core/menu-ui",
+      "name": "@seasun-core/menu-ui",
       "path": "packages/@core/ui-kit/menu-ui",
     },
     {
-      "name": "@vben-core/popup-ui",
+      "name": "@seasun-core/popup-ui",
       "path": "packages/@core/ui-kit/popup-ui",
     },
     {
-      "name": "@vben-core/shadcn-ui",
+      "name": "@seasun-core/shadcn-ui",
       "path": "packages/@core/ui-kit/shadcn-ui",
     },
     {
-      "name": "@vben-core/tabs-ui",
+      "name": "@seasun-core/tabs-ui",
       "path": "packages/@core/ui-kit/tabs-ui",
     },
     {
-      "name": "@vben/constants",
+      "name": "@seasun/constants",
       "path": "packages/constants",
     },
     {
-      "name": "@vben/access",
+      "name": "@seasun/access",
       "path": "packages/effects/access",
     },
     {
-      "name": "@vben/common-ui",
+      "name": "@seasun/common-ui",
       "path": "packages/effects/common-ui",
     },
     {
-      "name": "@vben/hooks",
+      "name": "@seasun/hooks",
       "path": "packages/effects/hooks",
     },
     {
-      "name": "@vben/layouts",
+      "name": "@seasun/layouts",
       "path": "packages/effects/layouts",
     },
     {
-      "name": "@vben/plugins",
+      "name": "@seasun/plugins",
       "path": "packages/effects/plugins",
     },
     {
-      "name": "@vben/request",
+      "name": "@seasun/request",
       "path": "packages/effects/request",
     },
     {
-      "name": "@vben/icons",
+      "name": "@seasun/icons",
       "path": "packages/icons",
     },
     {
-      "name": "@vben/locales",
+      "name": "@seasun/locales",
       "path": "packages/locales",
     },
     {
-      "name": "@vben/preferences",
+      "name": "@seasun/preferences",
       "path": "packages/preferences",
     },
     {
-      "name": "@vben/stores",
+      "name": "@seasun/stores",
       "path": "packages/stores",
     },
     {
-      "name": "@vben/styles",
+      "name": "@seasun/styles",
       "path": "packages/styles",
     },
     {
-      "name": "@vben/types",
+      "name": "@seasun/types",
       "path": "packages/types",
     },
     {
-      "name": "@vben/utils",
+      "name": "@seasun/utils",
       "path": "packages/utils",
     },
     {
-      "name": "@vben/turbo-run",
+      "name": "@seasun/turbo-run",
       "path": "scripts/turbo-run",
     },
     {
-      "name": "@vben/vsh",
+      "name": "@seasun/vsh",
       "path": "scripts/vsh",
     },
   ],

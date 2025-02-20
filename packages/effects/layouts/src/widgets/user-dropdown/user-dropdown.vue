@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import type { AnyFunction } from '@vben/types';
+import type { AnyFunction } from '@seasun/types';
 
 import type { Component } from 'vue';
 import { computed, useTemplateRef, watch } from 'vue';
 
-import { useHoverToggle } from '@vben/hooks';
-import { LockKeyhole, LogOut } from '@vben/icons';
-import { $t } from '@vben/locales';
-import { preferences, usePreferences } from '@vben/preferences';
-import { useLockStore } from '@vben/stores';
-import { isWindowsOs } from '@vben/utils';
-import { useVbenModal } from '@vben-core/popup-ui';
+import { useHoverToggle } from '@seasun/hooks';
+import { LockKeyhole, LogOut } from '@seasun/icons';
+import { $t } from '@seasun/locales';
+import { preferences, usePreferences } from '@seasun/preferences';
+import { useLockStore } from '@seasun/stores';
+import { isWindowsOs } from '@seasun/utils';
+import { useVbenModal } from '@seasun-core/popup-ui';
 import {
   Badge,
   DropdownMenu,
@@ -22,7 +22,7 @@ import {
   DropdownMenuTrigger,
   VbenAvatar,
   VbenIcon,
-} from '@vben-core/shadcn-ui';
+} from '@seasun-core/shadcn-ui';
 
 import { useMagicKeys, whenever } from '@vueuse/core';
 

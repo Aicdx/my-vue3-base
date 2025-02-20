@@ -1,19 +1,19 @@
 <script lang="ts" setup>
-import type { MenuRecordRaw } from '@vben/types';
+import type { MenuRecordRaw } from '@seasun/types';
 
 import { computed, useSlots, watch } from 'vue';
 
-import { useRefresh } from '@vben/hooks';
-import { $t } from '@vben/locales';
+import { useRefresh } from '@seasun/hooks';
+import { $t } from '@seasun/locales';
 import {
   preferences,
   updatePreferences,
   usePreferences,
-} from '@vben/preferences';
-import { useLockStore } from '@vben/stores';
-import { cloneDeep, mapTree } from '@vben/utils';
-import { VbenAdminLayout } from '@vben-core/layout-ui';
-import { VbenBackTop, VbenLogo } from '@vben-core/shadcn-ui';
+} from '@seasun/preferences';
+import { useLockStore } from '@seasun/stores';
+import { cloneDeep, mapTree } from '@seasun/utils';
+import { VbenAdminLayout } from '@seasun-core/layout-ui';
+import { VbenBackTop, VbenLogo } from '@seasun-core/shadcn-ui';
 
 import { Breadcrumb, CheckUpdates, Preferences } from '../widgets';
 import { LayoutContent, LayoutContentSpinner } from './content';

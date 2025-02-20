@@ -1,6 +1,6 @@
-import type { IconifyIconStructure } from '@vben-core/icons';
+import type { IconifyIconStructure } from '@seasun-core/icons';
 
-import { addIcon } from '@vben-core/icons';
+import { addIcon } from '@seasun-core/icons';
 
 let loaded = false;
 if (!loaded) {

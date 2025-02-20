@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from 'vue';
 
-import { LockKeyhole } from '@vben/icons';
-import { $t, useI18n } from '@vben/locales';
-import { storeToRefs, useLockStore } from '@vben/stores';
-import { useScrollLock } from '@vben-core/composables';
-import { useVbenForm, z } from '@vben-core/form-ui';
-import { VbenAvatar, VbenButton } from '@vben-core/shadcn-ui';
+import { LockKeyhole } from '@seasun/icons';
+import { $t, useI18n } from '@seasun/locales';
+import { storeToRefs, useLockStore } from '@seasun/stores';
+import { useScrollLock } from '@seasun-core/composables';
+import { useVbenForm, z } from '@seasun-core/form-ui';
+import { VbenAvatar, VbenButton } from '@seasun-core/shadcn-ui';
 
 import { useDateFormat, useNow } from '@vueuse/core';
 

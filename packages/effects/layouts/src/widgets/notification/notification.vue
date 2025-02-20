@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 import type { NotificationItem } from './types';
 
-import { Bell, MailCheck } from '@vben/icons';
-import { $t } from '@vben/locales';
+import { Bell, MailCheck } from '@seasun/icons';
+import { $t } from '@seasun/locales';
 import {
   VbenButton,
   VbenIconButton,
   VbenPopover,
   VbenScrollbar,
-} from '@vben-core/shadcn-ui';
+} from '@seasun-core/shadcn-ui';
 
 import { useToggle } from '@vueuse/core';
 

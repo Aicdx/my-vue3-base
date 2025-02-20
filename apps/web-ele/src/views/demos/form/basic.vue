@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { h } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@seasun/common-ui';
 
 import { ElButton, ElCard, ElCheckbox, ElMessage } from 'element-plus';
 

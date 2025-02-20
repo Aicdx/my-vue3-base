@@ -6,11 +6,11 @@ import {
   CSS_VARIABLE_LAYOUT_CONTENT_WIDTH,
   CSS_VARIABLE_LAYOUT_FOOTER_HEIGHT,
   CSS_VARIABLE_LAYOUT_HEADER_HEIGHT,
-} from '@vben-core/shared/constants';
+} from '@seasun-core/shared/constants';
 import {
   getElementVisibleRect,
   type VisibleDomRect,
-} from '@vben-core/shared/utils';
+} from '@seasun-core/shared/utils';
 
 import { useCssVar, useDebounceFn } from '@vueuse/core';
 

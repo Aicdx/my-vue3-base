@@ -1,5 +1,5 @@
 {
-  "name": "@vben/utils",
+  "name": "@seasun/utils",
   "version": "5.5.2",
   "homepage": "https://github.com/vbenjs/vue-vben-admin",
   "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
@@ -20,8 +20,8 @@
     }
   },
   "dependencies": {
-    "@vben-core/shared": "workspace:*",
-    "@vben-core/typings": "workspace:*",
+    "@seasun-core/shared": "workspace:*",
+    "@seasun-core/typings": "workspace:*",
     "jsencrypt": "^3.3.2",
     "vue-router": "catalog:"
   }

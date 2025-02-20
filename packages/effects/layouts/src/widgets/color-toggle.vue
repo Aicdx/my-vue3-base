@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import type { BuiltinThemeType } from '@vben/types';
+import type { BuiltinThemeType } from '@seasun/types';
 
-import { Palette } from '@vben/icons';
+import { Palette } from '@seasun/icons';
 import {
   COLOR_PRESETS,
   preferences,
   updatePreferences,
-} from '@vben/preferences';
-import { VbenIconButton } from '@vben-core/shadcn-ui';
+} from '@seasun/preferences';
+import { VbenIconButton } from '@seasun-core/shadcn-ui';
 
 defineOptions({
   name: 'AuthenticationColorToggle',

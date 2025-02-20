@@ -1,11 +1,11 @@
-import type { DeepPartial } from '@vben-core/typings';
+import type { DeepPartial } from '@seasun-core/typings';
 
 import type { InitialOptions, Preferences } from './types';
 
 import { markRaw, reactive, readonly, watch } from 'vue';
 
-import { StorageManager } from '@vben-core/shared/cache';
-import { isMacOs, merge } from '@vben-core/shared/utils';
+import { StorageManager } from '@seasun-core/shared/cache';
+import { isMacOs, merge } from '@seasun-core/shared/utils';
 
 import {
   breakpointsTailwind,

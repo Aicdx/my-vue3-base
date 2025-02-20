@@ -3,8 +3,8 @@ import type { VbenFormProps } from '#/adapter/form';
 import type { VxeGridProps } from '#/adapter/vxe-table';
 import type { TableApi } from '#/types/table';
 
-import { useVbenModal } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { useVbenModal } from '@seasun/common-ui';
+import { $t } from '@seasun/locales';
 
 import {
   ElButton,

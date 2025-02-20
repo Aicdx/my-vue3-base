@@ -3,9 +3,9 @@ import type {
   LayoutHeaderMenuAlignType,
   LayoutHeaderModeType,
   SelectOption,
-} from '@vben/types';
+} from '@seasun/types';
 
-import { $t } from '@vben/locales';
+import { $t } from '@seasun/locales';
 
 import SelectItem from '../select-item.vue';
 import SwitchItem from '../switch-item.vue';

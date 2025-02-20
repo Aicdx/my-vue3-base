@@ -1,16 +1,16 @@
 /**
  * 该文件可自行根据业务逻辑进行调整
  */
-import type { HttpResponse } from '@vben/request';
+import type { HttpResponse } from '@seasun/request';
 
-import { useAppConfig } from '@vben/hooks';
-import { preferences } from '@vben/preferences';
+import { useAppConfig } from '@seasun/hooks';
+import { preferences } from '@seasun/preferences';
 import {
   authenticateResponseInterceptor,
   errorMessageResponseInterceptor,
   RequestClient,
-} from '@vben/request';
-import { useAccessStore } from '@vben/stores';
+} from '@seasun/request';
+import { useAccessStore } from '@seasun/stores';
 
 import { ElMessage } from 'element-plus';
 

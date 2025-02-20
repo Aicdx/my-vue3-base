@@ -1,5 +1,5 @@
 {
-  "name": "@vben/hooks",
+  "name": "@seasun/hooks",
   "version": "5.5.2",
   "homepage": "https://github.com/vbenjs/vue-vben-admin",
   "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
@@ -20,11 +20,11 @@
     }
   },
   "dependencies": {
-    "@vben-core/composables": "workspace:*",
-    "@vben/preferences": "workspace:*",
-    "@vben/stores": "workspace:*",
-    "@vben/types": "workspace:*",
-    "@vben/utils": "workspace:*",
+    "@seasun-core/composables": "workspace:*",
+    "@seasun/preferences": "workspace:*",
+    "@seasun/stores": "workspace:*",
+    "@seasun/types": "workspace:*",
+    "@seasun/utils": "workspace:*",
     "@vueuse/core": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:",

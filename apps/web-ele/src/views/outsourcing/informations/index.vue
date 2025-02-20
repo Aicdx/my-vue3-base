@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 
-import { SearchTable } from '@vben/common-ui';
+import { SearchTable } from '@seasun/common-ui';
 
 import { ElButton, ElMessage, ElMessageBox, ElTableColumn } from 'element-plus';
 

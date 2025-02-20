@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { SelectOption } from '@vben/types';
+import type { SelectOption } from '@seasun/types';
 
-import { ToggleGroup, ToggleGroupItem } from '@vben-core/shadcn-ui';
+import { ToggleGroup, ToggleGroupItem } from '@seasun-core/shadcn-ui';
 
 defineOptions({
   name: 'PreferenceToggleItem',

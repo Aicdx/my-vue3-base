@@ -3,12 +3,12 @@ import type { ExtendedFormApi, VbenFormProps } from './types';
 
 // import { toRaw, watch } from 'vue';
 
-import { useForwardPriorityValues } from '@vben-core/composables';
-// import { isFunction } from '@vben-core/shared/utils';
+import { useForwardPriorityValues } from '@seasun-core/composables';
+// import { isFunction } from '@seasun-core/shared/utils';
 
 import { nextTick, onMounted, watch } from 'vue';
 
-import { cloneDeep } from '@vben-core/shared/utils';
+import { cloneDeep } from '@seasun-core/shared/utils';
 
 import { useDebounceFn } from '@vueuse/core';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@vben/locales",
+  "name": "@seasun/locales",
   "version": "5.5.2",
   "homepage": "https://github.com/vbenjs/vue-vben-admin",
   "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@intlify/core-base": "catalog:",
-    "@vben-core/composables": "workspace:*",
+    "@seasun-core/composables": "workspace:*",
     "vue": "catalog:",
     "vue-i18n": "catalog:"
   }

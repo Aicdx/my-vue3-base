@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
 
-import { $t } from '@vben/locales';
+import { $t } from '@seasun/locales';
 
 import {
   ElButton,

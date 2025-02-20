@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import type { BuiltinThemeType } from '@vben/types';
+import type { BuiltinThemeType } from '@seasun/types';
 
 import { computed, ref } from 'vue';
 
-import { UserRoundPen } from '@vben/icons';
-import { $t } from '@vben/locales';
+import { UserRoundPen } from '@seasun/icons';
+import { $t } from '@seasun/locales';
 import {
   BUILT_IN_THEME_PRESETS,
   type BuiltinThemePreset,
-} from '@vben/preferences';
-import { convertToHsl, TinyColor } from '@vben/utils';
+} from '@seasun/preferences';
+import { convertToHsl, TinyColor } from '@seasun/utils';
 
 defineOptions({
   name: 'PreferenceBuiltinTheme',

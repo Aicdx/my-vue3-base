@@ -1,5 +1,5 @@
 {
-  "name": "@vben/icons",
+  "name": "@seasun/icons",
   "version": "5.5.2",
   "homepage": "https://github.com/vbenjs/vue-vben-admin",
   "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
@@ -17,6 +17,6 @@
     }
   },
   "dependencies": {
-    "@vben-core/icons": "workspace:*"
+    "@seasun-core/icons": "workspace:*"
   }
 }

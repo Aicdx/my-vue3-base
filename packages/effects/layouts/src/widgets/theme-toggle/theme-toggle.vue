@@ -1,18 +1,18 @@
 <script lang="ts" setup>
-import type { ThemeModeType } from '@vben/types';
+import type { ThemeModeType } from '@seasun/types';
 
-import { MoonStar, Sun, SunMoon } from '@vben/icons';
-import { $t } from '@vben/locales';
+import { MoonStar, Sun, SunMoon } from '@seasun/icons';
+import { $t } from '@seasun/locales';
 import {
   preferences,
   updatePreferences,
   usePreferences,
-} from '@vben/preferences';
+} from '@seasun/preferences';
 import {
   ToggleGroup,
   ToggleGroupItem,
   VbenTooltip,
-} from '@vben-core/shadcn-ui';
+} from '@seasun-core/shadcn-ui';
 
 import ThemeButton from './theme-button.vue';
 

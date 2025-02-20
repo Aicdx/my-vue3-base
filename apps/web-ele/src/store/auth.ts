@@ -1,11 +1,11 @@
-import type { Recordable, UserInfo } from '@vben/types';
+import type { Recordable, UserInfo } from '@seasun/types';
 
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { DEFAULT_HOME_PATH, LOGIN_PATH } from '@vben/constants';
-import { resetAllStores, useAccessStore, useUserStore } from '@vben/stores';
-import { encrypt } from '@vben/utils';
+import { DEFAULT_HOME_PATH, LOGIN_PATH } from '@seasun/constants';
+import { resetAllStores, useAccessStore, useUserStore } from '@seasun/stores';
+import { encrypt } from '@seasun/utils';
 
 import { ElNotification } from 'element-plus';
 import { defineStore } from 'pinia';

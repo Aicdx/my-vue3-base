@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { VbenFormProps } from '@vben-core/form-ui';
+import type { VbenFormProps } from '@seasun-core/form-ui';
 import type {
   VxeGridDefines,
   VxeGridInstance,
@@ -22,12 +22,12 @@ import {
   watch,
 } from 'vue';
 
-import { usePriorityValues } from '@vben/hooks';
-import { EmptyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
-import { usePreferences } from '@vben/preferences';
-import { cloneDeep, cn, mergeWithArrayOverride } from '@vben/utils';
-import { VbenHelpTooltip, VbenLoading } from '@vben-core/shadcn-ui';
+import { usePriorityValues } from '@seasun/hooks';
+import { EmptyIcon } from '@seasun/icons';
+import { $t } from '@seasun/locales';
+import { usePreferences } from '@seasun/preferences';
+import { cloneDeep, cn, mergeWithArrayOverride } from '@seasun/utils';
+import { VbenHelpTooltip, VbenLoading } from '@seasun-core/shadcn-ui';
 
 import { VxeGrid, VxeUI } from 'vxe-table';
 

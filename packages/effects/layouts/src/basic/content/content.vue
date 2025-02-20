@@ -7,8 +7,8 @@ import type {
 import { type VNode } from 'vue';
 import { RouterView } from 'vue-router';
 
-import { preferences, usePreferences } from '@vben/preferences';
-import { storeToRefs, useTabbarStore } from '@vben/stores';
+import { preferences, usePreferences } from '@seasun/preferences';
+import { storeToRefs, useTabbarStore } from '@seasun/stores';
 
 import { IFrameRouterView } from '../../iframe';
 

@@ -2,10 +2,10 @@ import type {
   ComponentRecordType,
   GenerateMenuAndRoutesOptions,
   RouteRecordStringComponent,
-} from '@vben-core/typings';
+} from '@seasun-core/typings';
 import type { RouteRecordRaw } from 'vue-router';
 
-import { mapTree } from '@vben-core/shared/utils';
+import { mapTree } from '@seasun-core/shared/utils';
 
 /**
  * 动态生成路由 - 后端方式

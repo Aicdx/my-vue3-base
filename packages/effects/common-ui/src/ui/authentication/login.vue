@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import type { Recordable } from '@vben/types';
-import type { VbenFormSchema } from '@vben-core/form-ui';
+import type { Recordable } from '@seasun/types';
+import type { VbenFormSchema } from '@seasun-core/form-ui';
 
 import type { AuthenticationProps } from './types';
 
 import { computed, onMounted, reactive, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { $t } from '@vben/locales';
-import { useVbenForm } from '@vben-core/form-ui';
-import { VbenButton, VbenCheckbox } from '@vben-core/shadcn-ui';
+import { $t } from '@seasun/locales';
+import { useVbenForm } from '@seasun-core/form-ui';
+import { VbenButton, VbenCheckbox } from '@seasun-core/shadcn-ui';
 
 import Title from './auth-title.vue';
 import ThirdPartyLogin from './third-party-login.vue';

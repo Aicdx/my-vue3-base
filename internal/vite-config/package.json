@@ -1,5 +1,5 @@
 {
-  "name": "@vben/vite-config",
+  "name": "@seasun/vite-config",
   "version": "5.5.2",
   "private": true,
   "homepage": "https://github.com/vbenjs/vue-vben-admin",
@@ -40,9 +40,9 @@
   },
   "devDependencies": {
     "@pnpm/workspace.read-manifest": "catalog:",
+    "@seasun/node-utils": "workspace:*",
     "@types/archiver": "catalog:",
     "@types/html-minifier-terser": "catalog:",
-    "@vben/node-utils": "workspace:*",
     "@vitejs/plugin-vue": "catalog:",
     "@vitejs/plugin-vue-jsx": "catalog:",
     "dayjs": "catalog:",

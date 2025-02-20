@@ -1,11 +1,11 @@
-import type { TabDefinition } from '@vben/types';
-import type { IContextMenuItem } from '@vben-core/tabs-ui';
+import type { TabDefinition } from '@seasun/types';
+import type { IContextMenuItem } from '@seasun-core/tabs-ui';
 import type { RouteLocationNormalizedGeneric } from 'vue-router';
 
 import { computed, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { useContentMaximize, useTabs } from '@vben/hooks';
+import { useContentMaximize, useTabs } from '@seasun/hooks';
 import {
   ArrowLeftToLine,
   ArrowRightLeft,
@@ -18,10 +18,10 @@ import {
   PinOff,
   RotateCw,
   X,
-} from '@vben/icons';
-import { $t, useI18n } from '@vben/locales';
-import { useAccessStore, useTabbarStore } from '@vben/stores';
-import { filterTree } from '@vben/utils';
+} from '@seasun/icons';
+import { $t, useI18n } from '@seasun/locales';
+import { useAccessStore, useTabbarStore } from '@seasun/stores';
+import { filterTree } from '@seasun/utils';
 
 export function useTabbar() {
   const router = useRouter();

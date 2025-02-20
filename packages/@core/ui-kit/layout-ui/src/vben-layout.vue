@@ -8,10 +8,10 @@ import {
   SCROLL_FIXED_CLASS,
   useLayoutFooterStyle,
   useLayoutHeaderStyle,
-} from '@vben-core/composables';
-import { Menu } from '@vben-core/icons';
-import { VbenIconButton } from '@vben-core/shadcn-ui';
-import { ELEMENT_ID_MAIN_CONTENT } from '@vben-core/shared/constants';
+} from '@seasun-core/composables';
+import { Menu } from '@seasun-core/icons';
+import { VbenIconButton } from '@seasun-core/shadcn-ui';
+import { ELEMENT_ID_MAIN_CONTENT } from '@seasun-core/shared/constants';
 
 import { useMouse, useScroll, useThrottleFn } from '@vueuse/core';
 

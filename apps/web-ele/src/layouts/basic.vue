@@ -1,21 +1,21 @@
 <script lang="ts" setup>
-import type { NotificationItem } from '@vben/layouts';
+import type { NotificationItem } from '@seasun/layouts';
 
 import { computed, ref, watch } from 'vue';
 
-import { AuthenticationLoginExpiredModal } from '@vben/common-ui';
-import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@vben/constants';
-import { useWatermark } from '@vben/hooks';
-import { BookOpenText, CircleHelp, MdiGithub } from '@vben/icons';
+import { AuthenticationLoginExpiredModal } from '@seasun/common-ui';
+import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@seasun/constants';
+import { useWatermark } from '@seasun/hooks';
+import { BookOpenText, CircleHelp, MdiGithub } from '@seasun/icons';
 import {
   BasicLayout,
   LockScreen,
   Notification,
   UserDropdown,
-} from '@vben/layouts';
-import { preferences } from '@vben/preferences';
-import { useAccessStore, useUserStore } from '@vben/stores';
-import { openWindow } from '@vben/utils';
+} from '@seasun/layouts';
+import { preferences } from '@seasun/preferences';
+import { useAccessStore, useUserStore } from '@seasun/stores';
+import { openWindow } from '@seasun/utils';
 
 import { $t } from '#/locales';
 import { useAuthStore } from '#/store';

@@ -14,7 +14,7 @@ import type {
   PreferencesButtonPositionType,
   TabsStyleType,
   ThemeModeType,
-} from '@vben-core/typings';
+} from '@seasun-core/typings';
 
 type SupportedLanguagesType = 'en-US' | 'zh-CN';
 

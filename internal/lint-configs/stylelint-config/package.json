@@ -1,5 +1,5 @@
 {
-  "name": "@vben/stylelint-config",
+  "name": "@seasun/stylelint-config",
   "version": "5.5.2",
   "private": true,
   "homepage": "https://github.com/vbenjs/vue-vben-admin",

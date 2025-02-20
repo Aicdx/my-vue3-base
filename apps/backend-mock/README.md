@@ -1,4 +1,4 @@
-# @vben/backend-mock
+# @seasun/backend-mock
 
 ## Description
 

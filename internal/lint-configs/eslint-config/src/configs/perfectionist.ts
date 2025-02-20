@@ -23,7 +23,7 @@ export async function perfectionist(): Promise<Linter.Config[]> {
                 vue: 'vue',
               },
               value: {
-                vben: ['@vben*', '@vben/**/**', '@vben-core/**/**'],
+                vben: ['@seasun*', '@seasun/**/**', '@seasun-core/**/**'],
                 vue: ['vue', 'vue-*', '@vue*'],
               },
             },

@@ -1,10 +1,10 @@
 import { createApp, watchEffect } from 'vue';
 
-import { registerAccessDirective } from '@vben/access';
-import { preferences } from '@vben/preferences';
-import { initStores } from '@vben/stores';
-import '@vben/styles';
-import '@vben/styles/ele';
+import { registerAccessDirective } from '@seasun/access';
+import { preferences } from '@seasun/preferences';
+import { initStores } from '@seasun/stores';
+import '@seasun/styles';
+import '@seasun/styles/ele';
 
 import { useTitle } from '@vueuse/core';
 import { ElLoading } from 'element-plus';

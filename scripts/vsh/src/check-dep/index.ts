@@ -1,6 +1,6 @@
 import type { CAC } from 'cac';
 
-import { getPackages } from '@vben/node-utils';
+import { getPackages } from '@seasun/node-utils';
 
 import depcheck from 'depcheck';
 
@@ -10,18 +10,18 @@ async function runDepcheck() {
     packages.map(async (pkg) => {
       if (
         [
-          '@vben/backend-mock',
-          '@vben/commitlint-config',
-          '@vben/eslint-config',
-          '@vben/lint-staged-config',
-          '@vben/node-utils',
-          '@vben/prettier-config',
-          '@vben/stylelint-config',
-          '@vben/tailwind-config',
-          '@vben/tsconfig',
-          '@vben/vite-config',
-          '@vben/vite-config',
-          '@vben/vsh',
+          '@seasun/backend-mock',
+          '@seasun/commitlint-config',
+          '@seasun/eslint-config',
+          '@seasun/lint-staged-config',
+          '@seasun/node-utils',
+          '@seasun/prettier-config',
+          '@seasun/stylelint-config',
+          '@seasun/tailwind-config',
+          '@seasun/tsconfig',
+          '@seasun/vite-config',
+          '@seasun/vite-config',
+          '@seasun/vsh',
         ].includes(pkg.packageJson.name)
       ) {
         return;
@@ -32,11 +32,11 @@ async function runDepcheck() {
           'vite',
           'vitest',
           'unbuild',
-          '@vben/tsconfig',
-          '@vben/vite-config',
-          '@vben/tailwind-config',
+          '@seasun/tsconfig',
+          '@seasun/vite-config',
+          '@seasun/tailwind-config',
           '@types/*',
-          '@vben-core/design',
+          '@seasun-core/design',
         ],
         ignorePatterns: ['dist', 'node_modules', 'public'],
       });

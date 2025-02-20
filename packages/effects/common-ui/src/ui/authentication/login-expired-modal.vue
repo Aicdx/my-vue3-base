@@ -3,8 +3,8 @@ import type { AuthenticationProps } from './types';
 
 import { computed, watch } from 'vue';
 
-import { useVbenModal } from '@vben-core/popup-ui';
-import { Slot, VbenAvatar } from '@vben-core/shadcn-ui';
+import { useVbenModal } from '@seasun-core/popup-ui';
+import { Slot, VbenAvatar } from '@seasun-core/shadcn-ui';
 
 interface Props extends AuthenticationProps {
   avatar?: string;

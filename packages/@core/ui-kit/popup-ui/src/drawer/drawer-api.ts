@@ -1,7 +1,7 @@
 import type { DrawerApiOptions, DrawerState } from './drawer';
 
-import { Store } from '@vben-core/shared/store';
-import { bindMethods, isFunction } from '@vben-core/shared/utils';
+import { Store } from '@seasun-core/shared/store';
+import { bindMethods, isFunction } from '@seasun-core/shared/utils';
 
 export class DrawerApi {
   private api: Pick<

@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@vben/common-ui';
+import type { VbenFormSchema } from '@seasun/common-ui';
 
 import { computed, markRaw } from 'vue';
 
-import { AuthenticationLogin, SliderCaptcha, z } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { AuthenticationLogin, SliderCaptcha, z } from '@seasun/common-ui';
+import { $t } from '@seasun/locales';
 
 import { useAuthStore } from '#/store';
 

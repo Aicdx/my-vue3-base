@@ -1,4 +1,7 @@
-import type { LocaleSetupOptions, SupportedLanguagesType } from '@vben/locales';
+import type {
+  LocaleSetupOptions,
+  SupportedLanguagesType,
+} from '@seasun/locales';
 import type { Language } from 'element-plus/es/locale';
 
 import type { App } from 'vue';
@@ -8,8 +11,8 @@ import {
   $t,
   setupI18n as coreSetup,
   loadLocalesMapFromDir,
-} from '@vben/locales';
-import { preferences } from '@vben/preferences';
+} from '@seasun/locales';
+import { preferences } from '@seasun/preferences';
 
 import dayjs from 'dayjs';
 import enLocale from 'element-plus/es/locale/lang/en';

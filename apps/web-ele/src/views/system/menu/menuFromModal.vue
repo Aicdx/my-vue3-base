@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { useVbenForm, useVbenModal } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { useVbenForm, useVbenModal } from '@seasun/common-ui';
+import { $t } from '@seasun/locales';
 
 import { ElMessage } from 'element-plus';
 

@@ -4,9 +4,9 @@ import type { FallbackProps } from './fallback';
 import { computed, defineAsyncComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { ArrowLeft, RotateCw } from '@vben/icons';
-import { $t } from '@vben/locales';
-import { VbenButton } from '@vben-core/shadcn-ui';
+import { ArrowLeft, RotateCw } from '@seasun/icons';
+import { $t } from '@seasun/locales';
+import { VbenButton } from '@seasun-core/shadcn-ui';
 
 interface Props extends FallbackProps {}
 

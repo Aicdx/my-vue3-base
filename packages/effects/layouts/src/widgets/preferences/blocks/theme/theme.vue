@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { ThemeModeType } from '@vben/types';
+import type { ThemeModeType } from '@seasun/types';
 
 import type { Component } from 'vue';
 
-import { MoonStar, Sun, SunMoon } from '@vben/icons';
-import { $t } from '@vben/locales';
+import { MoonStar, Sun, SunMoon } from '@seasun/icons';
+import { $t } from '@seasun/locales';
 
 import SwitchItem from '../switch-item.vue';
 

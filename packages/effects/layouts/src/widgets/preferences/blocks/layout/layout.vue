@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { LayoutType } from '@vben/types';
+import type { LayoutType } from '@seasun/types';
 
 import { type Component, computed } from 'vue';
 
-import { CircleHelp } from '@vben/icons';
-import { $t } from '@vben/locales';
-import { VbenTooltip } from '@vben-core/shadcn-ui';
+import { CircleHelp } from '@seasun/icons';
+import { $t } from '@seasun/locales';
+import { VbenTooltip } from '@seasun-core/shadcn-ui';
 
 import {
   FullContent,

@@ -1,6 +1,6 @@
 import { h } from 'vue';
 
-import { setupVbenVxeTable, useVbenVxeGrid } from '@vben/plugins/vxe-table';
+import { setupVbenVxeTable, useVbenVxeGrid } from '@seasun/plugins/vxe-table';
 
 import { ElButton, ElImage } from 'element-plus';
 
@@ -65,4 +65,4 @@ setupVbenVxeTable({
 
 export { useVbenVxeGrid };
 
-export type * from '@vben/plugins/vxe-table';
+export type * from '@seasun/plugins/vxe-table';

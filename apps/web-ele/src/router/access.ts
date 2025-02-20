@@ -1,10 +1,10 @@
 import type {
   ComponentRecordType,
   GenerateMenuAndRoutesOptions,
-} from '@vben/types';
+} from '@seasun/types';
 
-import { generateAccessible } from '@vben/access';
-import { preferences } from '@vben/preferences';
+import { generateAccessible } from '@seasun/access';
+import { preferences } from '@seasun/preferences';
 
 import { ElMessage } from 'element-plus';
 
