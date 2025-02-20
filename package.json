@@ -1,24 +1,18 @@
 {
-  "name": "vben-admin-monorepo",
-  "version": "5.5.2",
+  "name": "seasun-cams-monorepo",
+  "version": "1.0.0",
   "private": true,
   "keywords": [
     "monorepo",
     "turbo",
     "vue3"
   ],
-  "license": "MIT",
-  "author": {
-    "name": "vben",
-    "email": "ann.vben@gmail.com",
-    "url": "https://github.com/anncwb"
-  },
   "type": "module",
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 turbo build",
     "build:analyze": "turbo build:analyze",
     "build:docker": "./scripts/deploy/build-local-docker-image.sh",
-    "build:ele": "pnpm run build --filter=@seasun/web-ele",
+    "build:cams": "pnpm run build --filter=@seasun/seasun-cams",
     "changeset": "pnpm exec changeset",
     "check": "pnpm run check:circular && pnpm run check:dep && pnpm run check:type && pnpm check:cspell",
     "check:circular": "vsh check-circular",
@@ -28,7 +22,7 @@
     "clean": "node ./scripts/clean.mjs",
     "commit": "czg",
     "dev": "turbo-run dev",
-    "dev:ele": "pnpm -F @seasun/web-ele run dev",
+    "dev:cams": "pnpm -F @seasun/seasun-cams run dev",
     "format": "vsh lint --format",
     "lint": "vsh lint",
     "postinstall": "pnpm -r run stub --if-present",

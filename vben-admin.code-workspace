@@ -5,8 +5,8 @@
       "path": "apps/backend-mock",
     },
     {
-      "name": "@seasun/web-ele",
-      "path": "apps/web-ele",
+      "name": "@seasun/seasun-cams",
+      "path": "apps/seasun-cams",
     },
     {
       "name": "@seasun/commitlint-config",

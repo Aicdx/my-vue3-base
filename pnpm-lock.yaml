@@ -601,7 +601,7 @@ importers:
         specifier: 'catalog:'
         version: 1.13.0
 
-  apps/web-ele:
+  apps/seasun-cams:
     dependencies:
       '@seasun/access':
         specifier: workspace:*
