@@ -127,8 +127,8 @@ catalogs:
       specifier: ^2.4.6
       version: 2.4.6
     '@vueuse/core':
-      specifier: ^12.2.0
-      version: 12.2.0
+      specifier: ^12.7.0
+      version: 12.7.0
     '@vueuse/integrations':
       specifier: ^12.2.0
       version: 12.2.0
@@ -647,7 +647,7 @@ importers:
         version: link:../../packages/utils
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       dayjs:
         specifier: 'catalog:'
         version: 1.11.13
@@ -1072,7 +1072,7 @@ importers:
         version: link:../base/shared
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       radix-vue:
         specifier: 'catalog:'
         version: 1.9.11(vue@3.5.13(typescript@5.7.2))
@@ -1097,7 +1097,7 @@ importers:
         version: link:../base/typings
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.2)
@@ -1121,7 +1121,7 @@ importers:
         version: 4.15.0(vue@3.5.13(typescript@5.7.2))(zod@3.24.1)
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       vee-validate:
         specifier: 'catalog:'
         version: 4.15.0(vue@3.5.13(typescript@5.7.2))
@@ -1154,7 +1154,7 @@ importers:
         version: link:../../base/typings
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.2)
@@ -1178,7 +1178,7 @@ importers:
         version: link:../../base/typings
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.2)
@@ -1202,7 +1202,7 @@ importers:
         version: link:../../base/typings
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.2)
@@ -1223,7 +1223,7 @@ importers:
         version: link:../../base/typings
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       class-variance-authority:
         specifier: 'catalog:'
         version: 0.7.1
@@ -1256,7 +1256,7 @@ importers:
         version: link:../../base/typings
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.2)
@@ -1319,7 +1319,7 @@ importers:
         version: link:../../types
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       '@vueuse/integrations':
         specifier: 'catalog:'
         version: 12.2.0(async-validator@4.2.5)(axios@1.7.9)(change-case@5.4.4)(focus-trap@7.6.2)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(typescript@5.7.2)
@@ -1359,7 +1359,7 @@ importers:
         version: link:../../utils
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.2)
@@ -1422,7 +1422,7 @@ importers:
         version: link:../../utils
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.2)
@@ -1461,7 +1461,7 @@ importers:
         version: link:../../utils
       '@vueuse/core':
         specifier: 'catalog:'
-        version: 12.2.0(typescript@5.7.2)
+        version: 12.7.0(typescript@5.7.2)
       echarts:
         specifier: 'catalog:'
         version: 5.6.0
@@ -4155,6 +4155,9 @@ packages:
   '@vueuse/core@12.2.0':
     resolution: {integrity: sha512-jksyNu+5EGwggNkRWd6xX+8qBkYbmrwdFQMgCABsz+wq8bKF6w3soPFLB8vocFp3wFIzn0OYkSPM9JP+AFKwsg==}
 
+  '@vueuse/core@12.7.0':
+    resolution: {integrity: sha512-jtK5B7YjZXmkGNHjviyGO4s3ZtEhbzSgrbX+s5o+Lr8i2nYqNyHuPVOeTdM1/hZ5Tkxg/KktAuAVDDiHMraMVA==}
+
   '@vueuse/core@9.13.0':
     resolution: {integrity: sha512-pujnclbeHWxxPRqXWmdkKV5OX4Wk4YeK7wusHqRwU0Q7EFusHoqNA/aPhB6KCh9hEqJkLAJo7bb0Lh9b+OIVzw==}
 
@@ -4205,6 +4208,9 @@ packages:
   '@vueuse/metadata@12.2.0':
     resolution: {integrity: sha512-x6zynZtTh1l52m0y8d/EgzpshnMjg8cNZ2KWoncJ62Z5qPSGoc4FUunmMVrrRM/I/5542rTEY89CGftngZvrkQ==}
 
+  '@vueuse/metadata@12.7.0':
+    resolution: {integrity: sha512-4VvTH9mrjXqFN5LYa5YfqHVRI6j7R00Vy4995Rw7PQxyCL3z0Lli86iN4UemWqixxEvYfRjG+hF9wL8oLOn+3g==}
+
   '@vueuse/metadata@9.13.0':
     resolution: {integrity: sha512-gdU7TKNAUVlXXLbaF+ZCfte8BjRJQWPCa2J55+7/h+yDtzw3vOoGQDRXzI6pyKyo6bXFT5/QoPE4hAknExjRLQ==}
 
@@ -4213,6 +4219,9 @@ packages:
 
   '@vueuse/shared@12.2.0':
     resolution: {integrity: sha512-SRr4AZwv/giS+EmyA1ZIzn3/iALjjnWAGaBNmoDTMEob9JwQaevAocuaMDnPAvU7Z35Y5g3CFRusCWgp1gVJ3Q==}
+
+  '@vueuse/shared@12.7.0':
+    resolution: {integrity: sha512-coLlUw2HHKsm7rPN6WqHJQr18WymN4wkA/3ThFaJ4v4gWGWAQQGK+MJxLuJTBs4mojQiazlVWAKNJNpUWGRkNw==}
 
   '@vueuse/shared@9.13.0':
     resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
@@ -12591,6 +12600,15 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@vueuse/core@12.7.0(typescript@5.7.2)':
+    dependencies:
+      '@types/web-bluetooth': 0.0.20
+      '@vueuse/metadata': 12.7.0
+      '@vueuse/shared': 12.7.0(typescript@5.7.2)
+      vue: 3.5.13(typescript@5.7.2)
+    transitivePeerDependencies:
+      - typescript
+
   '@vueuse/core@9.13.0(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@types/web-bluetooth': 0.0.16
@@ -12621,6 +12639,8 @@ snapshots:
 
   '@vueuse/metadata@12.2.0': {}
 
+  '@vueuse/metadata@12.7.0': {}
+
   '@vueuse/metadata@9.13.0': {}
 
   '@vueuse/shared@10.11.1(vue@3.5.13(typescript@5.7.2))':
@@ -12631,6 +12651,12 @@ snapshots:
       - vue
 
   '@vueuse/shared@12.2.0(typescript@5.7.2)':
+    dependencies:
+      vue: 3.5.13(typescript@5.7.2)
+    transitivePeerDependencies:
+      - typescript
+
+  '@vueuse/shared@12.7.0(typescript@5.7.2)':
     dependencies:
       vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
